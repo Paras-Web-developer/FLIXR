@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit';
-import homeslice from './homeslice';
+import { configureStore } from "@reduxjs/toolkit";
+import homeslice from "./homeSlice";
 export const store = configureStore({
   reducer: {
-    home: homeslice
+    home: homeslice,
   },
 });
 // console.log(store.reducer);
