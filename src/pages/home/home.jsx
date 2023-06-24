@@ -2,6 +2,7 @@ import "./style.scss";
 import Herobanner from "./heroBanner/Herobanner";
 import Tranding from "./Tranding/Tranding";
 import Popular from "./popular/Popular";
+import TopRated from "./topRated/TopRated";
 const home = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const home = () => {
         <Herobanner />
         <Tranding />
         <Popular/>
-        <div style={{ height: 1000 }}></div>
+        <TopRated/>
       </div>
     </>
   );
