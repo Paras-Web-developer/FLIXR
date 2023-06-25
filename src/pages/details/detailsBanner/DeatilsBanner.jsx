@@ -5,11 +5,11 @@ import dayjs from "dayjs";
 
 import "./style.scss";
 
-// import ContentWrapper from "../../../components/ContentWrapper/ContentWrapper"
+import ContentWrapper from "../../../components/ContentWrapper/ContentWrapper"
 import useFetch from "../../../hooks/useFetch";
 import Genres from "../../../components/genres/Genres";
 import CircleRating from "../../../components/circleRating/CircleRating";
-import Img from "../../../components/lazyLoadImage/Img.jsx";
+import Img from "../../../components/lazyLoadImage/Img";
 import PosterFallback from "../../../assets/no-poster.png";
 import { PlayIcon } from "../PlayIcon";
 
@@ -41,7 +41,7 @@ const DetailsBanner = ({ video, crew }) => {
                 <img src={url.backdrop + data.backdrop_path} alt="" />
               </div>
               <div className="opacity-layer"></div>
-              {/* <ContentWrapper> */}
+              <ContentWrapper>
                 <div className="content">
                   <div className="left">
                     {data.poster_path ? (
@@ -128,13 +128,13 @@ const DetailsBanner = ({ video, crew }) => {
                     )}
                   </div>
                 </div>
-              {/* </ContentWrapper> */}
+              </ContentWrapper>
             </React.Fragment>
           )}
         </>
       ) : (
         <div className="detailsBannerSkeleton">
-          {/* <ContentWrapper> */}
+          <ContentWrapper>
             <div className="left skeleton"></div>
             <div className="right">
               <div className="row skeleton"></div>
@@ -145,7 +145,7 @@ const DetailsBanner = ({ video, crew }) => {
               <div className="row skeleton"></div>
               <div className="row skeleton"></div>
             </div>
-          {/* </ContentWrapper> */}
+          </ContentWrapper>
         </div>
       )}
     </div>
