@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import useFetch from "../../../hooks/useFetch";
-import Img from "../../../components/lazyLoadImage/img"
+import Img from "../../../components/lazyLoadImage/img";
 import ContentWrapper from "../../../components/ContentWrapper/ContentWrapper";
 import "./style.scss";
 export default function Herobanner() {
@@ -25,6 +25,10 @@ export default function Herobanner() {
       Navigate(`/search/${query}`);
     }
   };
+  const search = ()=>{
+    Navigate(`/search/${query}`);
+
+  }
 
   return (
     <>
@@ -49,7 +53,7 @@ export default function Herobanner() {
                 type="text"
                 placeholder="Search for a movie or tv show..."
               />
-              <button>Search</button>
+              <button onClick={search}>Search</button>
             </div>
           </div>
         </ContentWrapper>

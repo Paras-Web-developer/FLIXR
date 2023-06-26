@@ -21,7 +21,7 @@ const Header = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  },[location]);
+  }, [location]);
   // scroll useEffect
   const controlNavbat = () => {
     if (window.scrollY > 200) {
@@ -47,8 +47,15 @@ const Header = () => {
       Navigate(`/search/${query}`);
       setTimeout(() => {
         setShowSearch(false);
-      }, 1000);
+      }, 100);
     }
+  };
+
+  const enter = () => {
+    Navigate(`/search/${query}`);
+    setTimeout(() => {
+      setShowSearch(false);
+    }, 100);
   };
 
   const openSearch = () => {
@@ -72,7 +79,7 @@ const Header = () => {
   return (
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
       <ContentWrapper>
-        <div className="logo" onClick={()=> Navigate("/")}>
+        <div className="logo" onClick={() => Navigate("/")}>
           <img src={pikachu} alt="" />
           <img src={logo} alt="" />
         </div>
@@ -121,6 +128,7 @@ const Header = () => {
                 type="text"
                 placeholder="Search for a movie or tv show..."
               />
+              <button onClick={enter}>enter</button>
               <VscChromeClose onClick={() => setShowSearch(false)} />
             </div>
           </ContentWrapper>
