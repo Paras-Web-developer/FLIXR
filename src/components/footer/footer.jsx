@@ -21,12 +21,11 @@ const Footer = () => {
           <li className="menuItem">FAQ</li>
         </ul>
         <div className="infoText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          Introducing "Streamify" - the ultimate streaming web app that brings
+          entertainment at your fingertips! Explore a vast library of movies, TV
+          shows, and music, and enjoy seamless streaming with HD quality.
+          Discover your favorite content and indulge in endless hours of
+          entertainment, all in one convenient platform.
         </div>
         <div className="socialIcons">
           <Link
@@ -44,7 +43,10 @@ const Footer = () => {
           <Link to="https://twitter.com/ParasGrove01" className="icon">
             <FaTwitter />
           </Link>
-          <Link to="https://www.linkedin.com/in/paras-grover-949233204/" className="icon">
+          <Link
+            to="https://www.linkedin.com/in/paras-grover-949233204/"
+            className="icon"
+          >
             <FaLinkedin />
           </Link>
         </div>
