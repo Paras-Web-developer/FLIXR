@@ -16,7 +16,9 @@ const Footer = () => {
         <ul className="menuItems">
           <li className="menuItem">Terms Of Use</li>
           <li className="menuItem">Privacy-Policy</li>
-          <li className="menuItem">About</li>
+          <Link className="menuItem" to="https://prince-portfolio.vercel.app/">
+            About
+          </Link>
           <li className="menuItem">Blog</li>
           <li className="menuItem">FAQ</li>
         </ul>
