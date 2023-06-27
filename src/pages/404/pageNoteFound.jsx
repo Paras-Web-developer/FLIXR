@@ -1,9 +1,17 @@
 import React from "react";
+
 import "./style.scss";
-export default function PageNoteFound() {
-  return (
-    <>
-      <h1>page note found</h1>
-    </>
-  );
-}
+
+import ContentWrapper from "../../components/ContentWrapper/ContentWrapper";
+const PageNotFound = () => {
+    return (
+        <div className="pageNotFound">
+            <ContentWrapper>
+                <span className="bigText">404</span>
+                <span className="smallText">Page not found!</span>
+            </ContentWrapper>
+        </div>
+    );
+};
+
+export default PageNotFound;
