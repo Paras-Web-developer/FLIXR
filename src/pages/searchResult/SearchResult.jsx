@@ -17,7 +17,7 @@ export default function SearchResult() {
     fetchDataFromApi(`/search/multi?query=${query}&page=${pageNum}`).then(
       (res) => {
         setData(res);
-          setPageNum((prev) => prev + 1);
+        setPageNum((prev) => prev + 1);
         setLoading(false);
       }
     );
@@ -34,7 +34,7 @@ export default function SearchResult() {
         } else {
           setData(res);
         }
-          setPageNum((prev) => prev + 1);
+        setPageNum((prev) => prev + 1);
       }
     );
   };
