@@ -3,6 +3,7 @@ import Herobanner from "./heroBanner/Herobanner";
 import Tranding from "./Tranding/Tranding";
 import Popular from "./popular/Popular";
 import TopRated from "./topRated/TopRated";
+import ads from "../../../ads.txt"
 import AdComponent from "../../components/adComponent/AdComponent";
 const home = () => {
   return (
